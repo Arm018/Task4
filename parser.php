@@ -12,7 +12,7 @@
 
 $data = json_decode($resp, true);
 
- file_put_contents("data.json", json_encode($data));
+ file_put_contents('data.json', json_encode($data));
 
 if ($data['cod'] == 200) {
     $temp = $data['main']['temp'];
@@ -23,7 +23,7 @@ if ($data['cod'] == 200) {
 //    var_dump($windSpeed,$humidity,$temp,$description);
 //    echo "</pre>";
 } else {
-    $error = "Unable to fetch weather data.";
+    $error = 'Unable to fetch weather data.';
 }
 
 
