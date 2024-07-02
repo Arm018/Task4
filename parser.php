@@ -1,7 +1,7 @@
 <?php
 
- $api_key = "";
- $city = "Yerevan";
+ $api_key = '';
+ $city = '';
  $api = "http://api.openweathermap.org/data/2.5/weather?q={$city}&appid={$api_key}&units=metric";
 
  $curl = curl_init();
